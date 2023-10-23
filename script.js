@@ -17,7 +17,7 @@ function getTopRatedMovies(ur) {
             showMovies(data.results);
         })
         .catch(error => {
-            console.error('Error fetching top rated movies:', error);
+            console.error('fetch 오류:', error);
         });
 }
 
@@ -61,8 +61,8 @@ function getColor(vote_average) {
 }
    
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+form.addEventListener('submit', (x) => {
+    x.preventDefault();
     const searchTerm = searchInput.value.trim().toLowerCase();
     if (searchTerm) {
 
